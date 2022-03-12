@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #f1ebebc7!important;
+  /* background:linear-gradient(#2e5389, #004d7a, #008793, #00bf72, #9fc54b)!important; */
+  font-family: 'Montserrat', sans-serif!important;
+}
+
+.d-flex{
+  display: flex;
+}
+
+
+.grid-col-2 {display: grid;grid-template-columns: repeat(2, 1fr); grid-gap: 25px; width: 100%;}
+.grid-col-3 {display: grid;grid-template-columns: repeat(3, 1fr); grid-gap: 25px; width: 100%;}
+.grid-col-4 {display: grid;grid-template-columns: repeat(4, 1fr); grid-gap: 25px; width: 100%;}
+.grid-col-5 {display: grid;grid-template-columns: repeat(5, 1fr); grid-gap: 25px; width: 100%;}
+.grid-col-6 {display: grid;grid-template-columns: repeat(6, 1fr); grid-gap: 25px; width: 100%;}
+.grid-col-7 {display: grid;grid-template-columns: repeat(7, 1fr); grid-gap: 25px; width: 100%;}
+.grid-col-8 {display: grid;grid-template-columns: repeat(8, 1fr); grid-gap: 25px; width: 100%;}
+.gap-0 {grid-gap: 0;}
+.gap-50 {grid-gap: 50px;}
+.gap-75 {grid-gap: 75px;}
+.gap-100 {grid-gap: 100px;}
+
+[class*='grid-col-']::before, [class*='grid-col-']::after {
+	clear: both;
+}
+
+@media only screen and (min-width:766px) and (max-width:959px) {
+	[class*='grid-col-'] {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width:765px) {
+	[class*='grid-col-'] {
+		display: block;
+	}
+}
+
+/* STYLE COMPONENTS */
+.wrapper{
+  margin: 0 auto;
+  max-width: 980px;
+  padding-top: 10px;
+}
+.card{
+  padding: 15px;
+  box-shadow: 0px 1px 5px #ccc;
+  border-radius: 12px;
+  width: 100%;
+  transition: .4s;
+}
+
+.card img{
+  margin: 0 auto;
+  display: block;
+  transition: .4s;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card:hover, .card:hover img{
+  transform: scale(1.1);
+}
+
+.card-text{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.card-text p{
+    border-radius: 12px;
+    width: 53%;
+    text-align: center;
+    padding: 7px 0px;
+    color: #FFF;
+    margin: 0 auto;
+    margin-top: 6px;
+    text-transform: uppercase;
+}
+
+.card-text h2{
+  font-size: 26px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+.center{
+  margin: auto;
+  display: block!important;
+}
+
+.mt-custom{
+  margin-top: 30%;
+}
+
+.seach-bar{
+  margin: 12px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+
+/* Extra Background Colors */
+.grass {
+  background-color: rgb(38, 235, 90);
+}
+
+.fire {
+  background-color: rgb(235, 71, 38);
+}
+
+.water {
+  background-color: rgb(38, 186, 235);
+}
+
+.electric {
+  background-color: rgb(235, 209, 38);
+}
+
+.ice {
+  background-color: rgb(38, 219, 235);
+}
+
+.fighting {
+  background-color: rgb(235, 104, 38);
+}
+
+.poison {
+  background-color: rgb(176, 38, 235);
+}
+.ground {
+  background-color: rgb(181, 131, 92);
+}
+
+.flying {
+  background-color: rgb(161, 215, 230);
+}
+
+.psychic {
+  background-color: rgb(219, 77, 207);
+}
+
+.ghost {
+  background-color: rgb(131, 24, 133);
+}
+
+.bug {
+  background-color: rgb(113, 209, 10);
+}
+
+.rock {
+  background-color: rgb(166, 87, 8);
+}
+
+.dragon {
+  background-color: rgb(50, 24, 217);
+}
+
+.normal {
+  background-color: rgb(168, 162, 157);
+}
+
+.fairy {
+  background-color: rgb(255, 148, 191);
+}
